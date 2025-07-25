@@ -20,6 +20,10 @@ I built this pcb to make my diy setup more professional. I originally hooked eve
 
 ## BOM
 
+I am supplying my own esp32-s3, rotary encoder, buttons, leds, and some other stuff that would cause the price to spike up to $30
+
+I also have the linear softpot potentiometer, force sensitive resistor, and plywood strip on hand. They total about $50 (plywood was scrap/free)
+
 | Price  | Part Number            | Type     | LCSC Part   | Owner    | Designators          |   Qty | Manufacturer   |
 |:-------|:-----------------------|:---------|:------------|:---------|:---------------------|------:|:---------------|
 | $0.02  | CL21A106KAYNNNE        | Basic    | C15850      | System   | C4                   |     2 | JLCPCB         |
@@ -46,5 +50,3 @@ I built this pcb to make my diy setup more professional. I originally hooked eve
 | $5.27  | Sales Tax              |          |             |          |                      |       |                |
 | $20.49 | Customs duties & taxes |          |             |          |                      |       |                |
 | $89.56 | **Grand Total**        |          |             |          |                      |       |                |
-
-I am supplying my own esp32-s3, rotary encoder, buttons, leds, and some other stuff that would cause the price to spike up to $30
