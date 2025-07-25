@@ -5,6 +5,8 @@ description: "A esp32 based synth that uses a touch pot and fsr."
 created_at: "2025-07-23"
 ---
 
+**Total time take: 15 hours**
+
 # June 23rd: Planning + Schematic
 
 <img width="816" height="539" alt="image" src="https://github.com/user-attachments/assets/b5cc40a0-ecc6-4740-b3f3-5d73176a3d98" />
