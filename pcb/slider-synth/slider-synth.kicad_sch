@@ -7228,7 +7228,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "250μF"
+		(property "Value" "47μF"
 			(at 274.32 135.89 0)
 			(effects
 				(font
@@ -7499,7 +7499,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "33μF"
+		(property "Value" "47μF"
 			(at 139.7 109.2262 0)
 			(effects
 				(font
@@ -7897,7 +7897,7 @@
 		(dnp no)
 		(uuid "3a320d3e-b974-42fa-bfdb-aeeda850dcf5")
 		(property "Reference" "C42"
-			(at 260.35 77.47 0)
+			(at 262.382 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7905,8 +7905,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.05μF"
-			(at 260.35 80.01 0)
+		(property "Value" "33nF"
+			(at 262.382 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8358,7 +8358,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "250μF"
+		(property "Value" "47μF"
 			(at 276.86 82.55 0)
 			(effects
 				(font
@@ -8532,7 +8532,7 @@
 		(dnp no)
 		(uuid "45fb99e5-aa6b-4e44-bcd3-9b608d6d1052")
 		(property "Reference" "C44"
-			(at 257.81 130.81 0)
+			(at 259.588 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8540,8 +8540,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.05μF"
-			(at 257.81 133.35 0)
+		(property "Value" "33nF"
+			(at 259.588 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
