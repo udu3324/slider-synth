@@ -15,3 +15,13 @@ I used some of my own references as well as these ones below. I was able to setu
 * [user guide](https://docs.espressif.com/projects/esp-dev-kits/en/latest/esp32s3/esp32-s3-devkitc-1/user_guide_v1.1.html)
 
 **Total time spent: ~4 hours**
+
+# June 24th: Adding more features
+
+<img width="540" height="595" alt="image" src="https://github.com/user-attachments/assets/b751e54f-aefb-477d-86c2-686868a9fd39" />
+
+I finished all of the audio circuit above and added more features like led indicators and a rotary encoder for extra control.
+
+<img width="384" height="503" alt="image" src="https://github.com/user-attachments/assets/17b0ad3d-66af-46db-918b-e85c2bb723a0" />
+
+**Total time spent: ~6 hours**
