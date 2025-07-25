@@ -28,11 +28,13 @@ I finished all of the audio circuit above and added more features like led indic
 
 # June 25th: Placement, Routing, CAD, and everything else
 
-For placement, I had a solid plan of selecting an entire box/feature in my schematic and seperating that to then place.
+<img width="641" height="401" alt="image" src="https://github.com/user-attachments/assets/32758920-a8ff-4a93-8d3d-b2fb3bbdd001" />
 
+For placement, I had a solid plan of selecting an entire box/feature in my schematic and seperating that to then place.
 
 After everything was placed, I can finally route and rotate any components if needed for better routing.
 
+<img width="835" height="375" alt="image" src="https://github.com/user-attachments/assets/e124b456-bb7d-42e7-ab4d-b9a1bf4dc651" />
 
 I made a simple case that would press fit onto my plywood strip and pcb. I wanted it to be flush with the thickness of the plywood to not add any extra height.
 
