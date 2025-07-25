@@ -2,7 +2,7 @@
 
 ![alt text](slider_synth_v9.png)
 
-A synth that is inspired by the modulin by wintergatan. It uses the esp32 and mozzi library to output sound.
+A synth that uses a linear touch sensor with a force sensor underneath to create cool sounds. It is inspired by the modulin by wintergatan. Powered by the esp32-s3 and mozzi library.
 
 ## Purpose
 
