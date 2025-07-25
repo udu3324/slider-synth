@@ -2260,6 +2260,458 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:R"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Device:R_Potentiometer"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "RV"
+				(at -4.445 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R_Potentiometer"
+				(at -2.54 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Potentiometer"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "resistor variable"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Potentiometer*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_Potentiometer_0_1"
+				(rectangle
+					(start 1.016 2.54)
+					(end -1.016 -2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.143 0) (xy 2.286 0.508) (xy 2.286 -0.508) (xy 1.143 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 0) (xy 1.524 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_Potentiometer_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 1.27)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Device:R_Potentiometer_Trim"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "RV"
+				(at -4.445 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R_Potentiometer_Trim"
+				(at -2.54 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Trim-potentiometer"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "resistor variable trimpot trimmer"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Potentiometer*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_Potentiometer_Trim_0_1"
+				(rectangle
+					(start 1.016 2.54)
+					(end -1.016 -2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.524 0.762) (xy 1.524 -0.762)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 0) (xy 1.524 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_Potentiometer_Trim_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 1.27)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:R_Small"
 			(pin_numbers
 				(hide yes)
@@ -4043,6 +4495,18 @@
 		(uuid 5cdec88f-f847-42c5-97f2-57c08ce0d795)
 	)
 	(rectangle
+		(start 193.04 149.86)
+		(end 226.06 165.1)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 653aa719-6003-4fdb-a07c-f51893fd9bcd)
+	)
+	(rectangle
 		(start 92.71 132.08)
 		(end 156.21 167.64)
 		(stroke
@@ -4053,6 +4517,18 @@
 			(type none)
 		)
 		(uuid 79a1f095-0404-4ada-a428-7a2eb8130c6c)
+	)
+	(rectangle
+		(start 161.29 132.08)
+		(end 191.77 165.1)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 93a3659e-edad-4343-99d8-8dda08bc7954)
 	)
 	(rectangle
 		(start 227.33 52.07)
@@ -4144,6 +4620,16 @@
 		)
 		(uuid "67198b2b-ddb1-45de-89be-5e3e8ccab45e")
 	)
+	(text "force sensing\n"
+		(exclude_from_sim no)
+		(at 199.898 148.844 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "67a23057-b40d-4c5c-8adb-731b0a7fbe35")
+	)
 	(text "basically same above\n"
 		(exclude_from_sim no)
 		(at 237.49 103.124 0)
@@ -4214,6 +4700,16 @@
 		)
 		(uuid "b66e0cdb-fe2a-448f-87cc-5e9e53dc9818")
 	)
+	(text "linear sensing\n"
+		(exclude_from_sim no)
+		(at 168.402 131.064 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "d1e4a6b2-701e-447c-8e70-bc09ed30dc50")
+	)
 	(junction
 		(at 125.73 46.99)
 		(diameter 0)
@@ -4243,6 +4739,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "49434ef1-67bc-4b48-97be-00413a16d815")
+	)
+	(junction
+		(at 176.53 151.13)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "52bce9ec-ef30-4822-8e16-e079ec5e04b1")
 	)
 	(junction
 		(at 134.62 34.29)
@@ -4358,6 +4860,10 @@
 		(at 256.54 134.62)
 		(uuid "f4146c98-5bda-4202-a371-09cd08609e56")
 	)
+	(no_connect
+		(at 180.34 139.7)
+		(uuid "f6f993f3-ac79-4f49-a219-13bc701ce2b7")
+	)
 	(wire
 		(pts
 			(xy 107.95 154.94) (xy 107.95 152.4)
@@ -4367,6 +4873,16 @@
 			(type default)
 		)
 		(uuid "00267e0c-76f6-4f06-a98c-155e2f3d767f")
+	)
+	(wire
+		(pts
+			(xy 176.53 143.51) (xy 176.53 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "01a29daf-c9bd-4338-82bd-4d4ce9c6de40")
 	)
 	(wire
 		(pts
@@ -4700,6 +5216,16 @@
 	)
 	(wire
 		(pts
+			(xy 201.93 157.48) (xy 205.74 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "33b4f044-6578-42f8-bfb0-a2a64bc5fd7e")
+	)
+	(wire
+		(pts
 			(xy 107.95 101.6) (xy 110.49 101.6)
 		)
 		(stroke
@@ -4980,6 +5506,16 @@
 	)
 	(wire
 		(pts
+			(xy 163.83 158.75) (xy 163.83 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5fca0d68-c2be-46f6-a15e-668ecf89ee43")
+	)
+	(wire
+		(pts
 			(xy 73.66 95.25) (xy 69.85 95.25)
 		)
 		(stroke
@@ -5110,6 +5646,16 @@
 	)
 	(wire
 		(pts
+			(xy 180.34 157.48) (xy 184.15 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "73ef835c-878f-4fbb-a3f3-261bec9e9945")
+	)
+	(wire
+		(pts
 			(xy 57.15 185.42) (xy 60.96 185.42)
 		)
 		(stroke
@@ -5167,6 +5713,16 @@
 			(type default)
 		)
 		(uuid "80ca54b3-383e-424e-967c-0a4ad87ec645")
+	)
+	(wire
+		(pts
+			(xy 222.25 157.48) (xy 219.71 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "81cd5569-0aa3-48a2-8fdc-3a6f9202efa0")
 	)
 	(wire
 		(pts
@@ -5300,6 +5856,16 @@
 	)
 	(wire
 		(pts
+			(xy 222.25 158.75) (xy 222.25 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a8bb3e89-7da6-4474-a1cd-a95666b63799")
+	)
+	(wire
+		(pts
 			(xy 125.73 41.91) (xy 125.73 43.18)
 		)
 		(stroke
@@ -5307,6 +5873,16 @@
 			(type default)
 		)
 		(uuid "acd06f92-a424-4731-ae43-5571d5d2982b")
+	)
+	(wire
+		(pts
+			(xy 179.07 151.13) (xy 176.53 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aee9d82c-37df-431c-a05f-d0c605b85b72")
 	)
 	(wire
 		(pts
@@ -5460,6 +6036,16 @@
 	)
 	(wire
 		(pts
+			(xy 163.83 157.48) (xy 172.72 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bf9546b1-6ecf-4d83-820f-4c9a491428b0")
+	)
+	(wire
+		(pts
 			(xy 125.73 43.18) (xy 124.46 43.18)
 		)
 		(stroke
@@ -5550,6 +6136,16 @@
 	)
 	(wire
 		(pts
+			(xy 170.18 143.51) (xy 170.18 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d2dd5c25-ebda-4f22-8fd6-be10786cd32c")
+	)
+	(wire
+		(pts
 			(xy 125.73 40.64) (xy 125.73 41.91)
 		)
 		(stroke
@@ -5637,6 +6233,16 @@
 			(type default)
 		)
 		(uuid "e3b930d7-ad71-421a-b764-957714c1bcad")
+	)
+	(wire
+		(pts
+			(xy 176.53 151.13) (xy 176.53 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e41fdc11-7db9-474a-b962-1ed3d3f7e06c")
 	)
 	(wire
 		(pts
@@ -5780,6 +6386,26 @@
 	)
 	(wire
 		(pts
+			(xy 170.18 139.7) (xy 172.72 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fe1cbbe2-6515-430b-b6f2-4666f0edec13")
+	)
+	(wire
+		(pts
+			(xy 214.63 157.48) (xy 213.36 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fe1d2dfa-868a-4616-a0dc-6e9126534bf1")
+	)
+	(wire
+		(pts
 			(xy 68.58 176.53) (xy 68.58 175.26)
 		)
 		(stroke
@@ -5894,6 +6520,50 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "LinearPot"
+		(shape input)
+		(at 59.69 77.47 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "1cfca7c7-a9ac-4237-9eb7-525bd6b4d652")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 71.6256 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "VDD"
+		(shape input)
+		(at 201.93 157.48 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "1e4f0577-cce9-4568-974c-4c92af8f13ca")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 195.3162 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -6800,6 +7470,50 @@
 			)
 		)
 	)
+	(global_label "VDD"
+		(shape input)
+		(at 184.15 157.48 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e72b53d4-17e9-4d08-aae8-9d9206e49845")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 190.7638 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "LinearPot"
+		(shape input)
+		(at 179.07 151.13 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e81e6616-c398-4b98-b45e-aaf8956cbdd2")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 191.0056 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "LED2"
 		(shape input)
 		(at 59.69 82.55 0)
@@ -7205,6 +7919,73 @@
 			(project "slider-synth"
 				(path "/4dbe56dc-f7c8-4228-aaa2-d2cbe426f97b"
 					(reference "#PWR048")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 217.17 157.48 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "160cf20a-3fc5-4261-902f-ad267a2776b7")
+		(property "Reference" "R13"
+			(at 217.424 161.798 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10kΩ"
+			(at 217.424 159.766 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 217.17 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 217.17 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 217.17 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "eb19fd7e-fab5-4006-ac09-39b5e37c57c9")
+		)
+		(pin "1"
+			(uuid "124c2b98-ba79-4317-af52-9eb66bc58d71")
+		)
+		(instances
+			(project "slider-synth"
+				(path "/4dbe56dc-f7c8-4228-aaa2-d2cbe426f97b"
+					(reference "R13")
 					(unit 1)
 				)
 			)
@@ -9686,6 +10467,77 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Potentiometer_Trim")
+		(at 176.53 139.7 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "72a197ab-c0ae-41a7-93ab-48133a0bc113")
+		(property "Reference" "RV2"
+			(at 176.53 133.35 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "3362P-100kΩ"
+			(at 176.53 135.89 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "2_udu_lib:POT_3362P"
+			(at 176.53 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 176.53 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Trim-potentiometer"
+			(at 176.53 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "ca40d0f4-e3a8-4a27-996e-345712b02a12")
+		)
+		(pin "2"
+			(uuid "867deb09-8083-4891-a157-fa76e3743e1e")
+		)
+		(pin "1"
+			(uuid "45310801-0838-4d87-908c-a624d0f175ab")
+		)
+		(instances
+			(project ""
+				(path "/4dbe56dc-f7c8-4228-aaa2-d2cbe426f97b"
+					(reference "RV2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 107.95 154.94 0)
 		(unit 1)
@@ -9950,6 +10802,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 170.18 143.51 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "82242bf6-beda-4352-b4c3-68f48c581ddd")
+		(property "Reference" "#PWR019"
+			(at 170.18 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 170.18 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 170.18 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 170.18 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 170.18 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3c9df34e-83cc-419c-b3f0-c95053dd07f3")
+		)
+		(instances
+			(project "slider-synth"
+				(path "/4dbe56dc-f7c8-4228-aaa2-d2cbe426f97b"
+					(reference "#PWR019")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Amplifier_Audio:LM386")
 		(at 254 127 0)
 		(unit 1)
@@ -10030,6 +10948,74 @@
 			(project "slider-synth"
 				(path "/4dbe56dc-f7c8-4228-aaa2-d2cbe426f97b"
 					(reference "U34")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 209.55 157.48 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "87b1897b-594d-4756-813a-2e39307acaa0")
+		(property "Reference" "R12"
+			(at 209.55 151.13 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Force Sensitive Resistor 500mm"
+			(at 209.55 153.67 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical"
+			(at 209.55 159.258 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 209.55 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 209.55 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4c0662cd-8cba-41c8-a18f-5fb34da57022")
+		)
+		(pin "2"
+			(uuid "cb542a56-29d6-4417-8047-c28a29102dea")
+		)
+		(instances
+			(project ""
+				(path "/4dbe56dc-f7c8-4228-aaa2-d2cbe426f97b"
+					(reference "R12")
 					(unit 1)
 				)
 			)
@@ -10648,6 +11634,77 @@
 			(project "slider-synth"
 				(path "/4dbe56dc-f7c8-4228-aaa2-d2cbe426f97b"
 					(reference "#PWR061")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Potentiometer")
+		(at 176.53 157.48 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a4b17336-efa5-4f64-90d1-ba813df6eb36")
+		(property "Reference" "RV1"
+			(at 176.53 161.29 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SEN-08681"
+			(at 176.53 163.83 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical"
+			(at 176.53 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 176.53 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Potentiometer"
+			(at 176.53 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "44068396-3511-4ae0-88d0-9db7664297d8")
+		)
+		(pin "1"
+			(uuid "3b751a0c-6aa3-44bb-be72-314e6bc539ba")
+		)
+		(pin "3"
+			(uuid "28bccfd5-9bfe-4dc5-b5f2-78b2cd230ee0")
+		)
+		(instances
+			(project ""
+				(path "/4dbe56dc-f7c8-4228-aaa2-d2cbe426f97b"
+					(reference "RV1")
 					(unit 1)
 				)
 			)
@@ -11278,6 +12335,72 @@
 			(project "slider-synth"
 				(path "/4dbe56dc-f7c8-4228-aaa2-d2cbe426f97b"
 					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 222.25 158.75 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b513a707-3d95-41f9-8085-0d264b282d35")
+		(property "Reference" "#PWR020"
+			(at 222.25 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 222.25 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 222.25 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 222.25 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 222.25 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "18af727d-b297-453d-8491-047b4437f6bf")
+		)
+		(instances
+			(project "slider-synth"
+				(path "/4dbe56dc-f7c8-4228-aaa2-d2cbe426f97b"
+					(reference "#PWR020")
 					(unit 1)
 				)
 			)
@@ -12367,6 +13490,72 @@
 			(project "slider-synth"
 				(path "/4dbe56dc-f7c8-4228-aaa2-d2cbe426f97b"
 					(reference "#PWR063")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 163.83 158.75 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fee1581e-620a-47f8-93b6-96e64f3c7d86")
+		(property "Reference" "#PWR018"
+			(at 163.83 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 163.83 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 163.83 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 163.83 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 163.83 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0706e170-5c52-4804-bc51-e9ca10001912")
+		)
+		(instances
+			(project "slider-synth"
+				(path "/4dbe56dc-f7c8-4228-aaa2-d2cbe426f97b"
+					(reference "#PWR018")
 					(unit 1)
 				)
 			)
