@@ -25,3 +25,15 @@ I finished all of the audio circuit above and added more features like led indic
 <img width="384" height="503" alt="image" src="https://github.com/user-attachments/assets/17b0ad3d-66af-46db-918b-e85c2bb723a0" />
 
 **Total time spent: ~6 hours**
+
+# June 25th: Placement, Routing, CAD, and everything else
+
+For placement, I had a solid plan of selecting an entire box/feature in my schematic and seperating that to then place.
+
+
+After everything was placed, I can finally route and rotate any components if needed for better routing.
+
+
+I made a simple case that would press fit onto my plywood strip and pcb. I wanted it to be flush with the thickness of the plywood to not add any extra height.
+
+**Total time spent: ~5 hours**
