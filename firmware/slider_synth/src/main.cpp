@@ -35,7 +35,7 @@
 #define SS_PIN 10  // if you are on AVR and using PortWrite you need still need to put the pin you are actually using: 7 on Uno, 38 on Mega
 #define BITS_PER_CHANNEL 12  // each channel of the DAC is outputting 12 bits
 
-const int fsr_vel_start = 7000;
+const int fsr_vel_start = 18000;
 const int fsr_velocity_limit = 56688;
 
 const int starting_octave = 3; //cant be less than 0
@@ -116,18 +116,27 @@ void updateControl() {
 
   //map to freq and vel
   pitch = map(linear_val, 0, 65536, hz_map_low, hz_map_high);
-  velocity = map(force_val, fsr_vel_start, fsr_velocity_limit, 0, 127);
+  velocity = map(force_val, fsr_vel_start, fsr_velocity_limit, 0, 20);
 
   //hard limits
   if ((linear_val == 0)) pitch = 0; //stop mapping of zero
   if (velocity > 127) velocity = 127; //stop higher mappings
+
+  //stop negative numbers for some reason
+  if (velocity < 0) velocity = 0;
+
+  float vibrato = (velocity * 0.02) * kVib.next();
 
   Serial.print("p = \t");
   Serial.print(pitch);
   Serial.print("\t v = ");
   Serial.println(velocity);
 
-  aSin.setFreq(pitch);
+  if (linear_val > 0) {
+    aSin.setFreq(pitch + vibrato);
+  } else {
+    aSin.setFreq(0);
+  }
 }
 
 AudioOutput updateAudio() {
