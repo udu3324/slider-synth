@@ -6,20 +6,12 @@
 
 #include <Mozzi.h>
 #include <Oscil.h>
-#include <tables/cos2048_int8.h> // table for Oscils to play
+#include <tables/sin2048_int8.h> // table for Oscils to play
+
 #include <SPI.h>
 #include <DAC_MCP49xx.h>  // https://github.com/tomcombriat/DAC_MCP49XX 
 // which is an adapted fork from https://github.com/exscape/electronics/tree/master/Arduino/Libraries/DAC_MCP49xx  (Thomas Backman)
-
-// Synthesis part
-Oscil<COS2048_NUM_CELLS, MOZZI_AUDIO_RATE> aCos1(COS2048_DATA);
-Oscil<COS2048_NUM_CELLS, MOZZI_AUDIO_RATE> aCos2(COS2048_DATA);
-Oscil<COS2048_NUM_CELLS, MOZZI_CONTROL_RATE> kEnv1(COS2048_DATA);
-
-#define SPI_SCK   12  // SCK (Clock)
-#define SPI_MOSI  11  // SDI (MOSI)
-#define SPI_MISO  9   // SDO (MISO) UNUSED, NOT ON THE MCP4922
-#define SPI_CS    10  // Chip Select (CS)
+#include <ESP32Encoder.h>
 
 #define Linear_Pot_Pin 13 // Linear Potentiometer
 #define FSR_Pin 4 // Force Sensitive Resistor
@@ -36,11 +28,38 @@ Oscil<COS2048_NUM_CELLS, MOZZI_CONTROL_RATE> kEnv1(COS2048_DATA);
 #define Rotary_B_Pin 47
 #define Rotary_Button_Pin 48
 
+#define SPI_SCK   12  // SCK (Clock)
+#define SPI_MOSI  11  // SDI (MOSI)
+#define SPI_MISO  9   // SDO (MISO) UNUSED, NOT ON THE MCP4922
 // External audio output parameters and DAC declaration
-#define SS_PIN 40  // if you are on AVR and using PortWrite you need still need to put the pin you are actually using: 7 on Uno, 38 on Mega
+#define SS_PIN 10  // if you are on AVR and using PortWrite you need still need to put the pin you are actually using: 7 on Uno, 38 on Mega
 #define BITS_PER_CHANNEL 12  // each channel of the DAC is outputting 12 bits
 
+const int fsr_vel_start = 7000;
+const int fsr_velocity_limit = 56688;
+
+const int starting_octave = 3; //cant be less than 0
+const int scale = 3; //scale of octaves playable
+
+int pitch; //27.5hz-4186hz
+int velocity; //0-127
+
+const float base_freq = 32.703; // C1
+float hz_map_low;
+float hz_map_high;
+
+float depth = 0.05;
+
+// Synthesis part
+Oscil <SIN2048_NUM_CELLS, MOZZI_AUDIO_RATE> aSin(SIN2048_DATA);
+Oscil <2048, MOZZI_CONTROL_RATE> kVib(SIN2048_DATA);
+
 DAC_MCP49xx dac(DAC_MCP49xx::MCP4922, SS_PIN);
+
+ESP32Encoder encoder;
+
+int linear_val;
+int force_val;
 
 void audioOutput(const AudioOutput f) // f is a structure containing both channels
 {
@@ -56,19 +75,31 @@ void audioOutput(const AudioOutput f) // f is a structure containing both channe
 void setup() {
   // serial for uart
   Serial.begin(115200, SERIAL_8N1, RX, TX);
+
+  Serial.println("udu3324 was here!!");
+
   // Set custom SPI pins
-  SPI.begin(SPI_SCK, SPI_MISO, SPI_MOSI, SPI_CS);
-  
-  aCos1.setFreq(440.f);
-  aCos2.setFreq(220.f);
-  kEnv1.setFreq(0.3f);
+  SPI.begin(SPI_SCK, SPI_MISO, SPI_MOSI);
 
   dac.init();   // start SPI communications
-
   //dac.setPortWrite(true);  //comment this line if you do not want to use PortWrite (for non-AVR platforms)
   
-  pinMode(1, INPUT_PULLUP);
-  pinMode(5, OUTPUT);
+  //calculate the starting hz
+  hz_map_low = base_freq * pow(2, starting_octave - 1);
+  hz_map_high = hz_map_low * pow(2, scale);
+
+  //vibrato setup
+  kVib.setFreq(6.5f);
+
+  pinMode(LED1_Pin, OUTPUT);
+  pinMode(LED2_Pin, OUTPUT);
+  pinMode(LED3_Pin, OUTPUT);
+  pinMode(LED4_Pin, OUTPUT);
+
+  pinMode(Rotary_B_Pin, INPUT);
+
+  encoder.attachHalfQuad(Rotary_A_Pin, Rotary_A_Pin);
+  encoder.setCount(0);
 
   startMozzi();
   Serial.println("on!!!!!!!!");
@@ -78,13 +109,31 @@ void setup() {
 int env1 = 0;
 
 void updateControl() {
-  env1 = kEnv1.next();
+  Serial.println("it is looping!!!");
+
+  linear_val = mozziAnalogRead16(Linear_Pot_Pin);
+  force_val = mozziAnalogRead16(FSR_Pin);
+
+  //map to freq and vel
+  pitch = map(linear_val, 0, 65536, hz_map_low, hz_map_high);
+  velocity = map(force_val, fsr_vel_start, fsr_velocity_limit, 0, 127);
+
+  //hard limits
+  if ((linear_val == 0)) pitch = 0; //stop mapping of zero
+  if (velocity > 127) velocity = 127; //stop higher mappings
+
+  Serial.print("p = \t");
+  Serial.print(pitch);
+  Serial.print("\t v = ");
+  Serial.println(velocity);
+
+  aSin.setFreq(pitch);
 }
 
 AudioOutput updateAudio() {
-  return MonoOutput::fromNBit(24, (int32_t)aCos1.next() * aCos2.next() * env1) ; // specify that the audio we are sending here is 24 bits.
+  return MonoOutput::fromNBit(24, (int32_t)aSin.next()) ; // specify that the audio we are sending here is 24 bits.
 }
 
-void loop() {
+void loop() {  
   audioHook();
 }
