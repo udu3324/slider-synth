@@ -41,3 +41,38 @@ After everything was placed, I can finally route and rotate any components if ne
 I made a simple case that would press fit onto my plywood strip and pcb. I wanted it to be flush with the thickness of the plywood to not add any extra height.
 
 **Total time spent: ~5 hours**
+
+# MILESTONE: MY PROJECT WAS APPROVED!!!!
+
+Time to wait for the grant and everything to be shipped.
+
+**Total time spent: ~0 hours**
+
+# August 4th: PCB Assembly
+
+<img width="621" height="733" alt="image" src="https://github.com/user-attachments/assets/00805163-b322-4884-9d90-6cba311df5d0" />
+
+My pcbs arrived! I chose to not to include some parts as it would cost more to assemble. I have some on hand already, like the esp32-s3-wroom.
+
+<img width="457" height="287" alt="image" src="https://github.com/user-attachments/assets/dc5a8d46-7eb9-4951-b020-8edae318cf85" />
+
+I also did not order a stencil, so I had to manually apply and shape the solder paste to each pad. It was okay.
+
+**Total time spent: ~4 hours**
+
+# August 5th: Finished Assembly, now Debugging
+
+<img width="660" height="595" alt="image" src="https://github.com/user-attachments/assets/986b5f75-e1a2-4412-9547-9884ed173d0d" />
+
+<img width="678" height="547" alt="image" src="https://github.com/user-attachments/assets/429bfbf4-8c96-40bd-b355-b3eed6b51be4" />
+
+I am so glad I connected my UART to these headers for debugging on my oscilliscope. For some reason, I can't get platformio to read any serial.
+
+<img width="576" height="547" alt="image" src="https://github.com/user-attachments/assets/4133c6a4-772d-4232-a5c7-ca722a7c1a8c" />
+
+I am so stupid. I did not check if the pinout i chose for my force sensitive resistor supported adc. (IO38) I had to solder a jumper wire to fix this issue.
+
+Moving onto the code part, something is not right. I am using mozzi which is a dsp library for synths. For some reason, it either outputs nothing or strange frequencies. Hopefully its not my schematic that is wrong.
+
+**Total time spent: ~6 hours**
+
