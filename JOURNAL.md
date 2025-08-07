@@ -76,3 +76,14 @@ Moving onto the code part, something is not right. I am using mozzi which is a d
 
 **Total time spent: ~6 hours**
 
+# August 6th: Finished!!!
+
+<img width="932" height="596" alt="image" src="https://github.com/user-attachments/assets/35ea75c6-296c-4dc0-8fda-07c0a3baa16e" />
+
+I found out the original reason why my synth sounded strange. It was because i was calculating my hz wrong for my scale, as the numbers were very large/wrong.
+
+I put four leds and a encoder with a button to cycle through modes that modify the synth's sound.
+
+After making sure everything was programmed right with little bugs left, it sounded neat and has tons of possibilities now.
+
+**Total time spent: ~4 hours**
