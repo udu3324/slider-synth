@@ -22,7 +22,9 @@ I built this pcb to make my diy setup more professional. I originally hooked eve
 
 I am supplying my own esp32-s3, rotary encoder, buttons, leds, and some other stuff that would cause the price to spike up to $30
 
-I also have the linear softpot potentiometer, force sensitive resistor, and plywood strip on hand. They total about $50 (plywood was scrap/free)
+I also have the linear softpot potentiometer, force sensitive resistor, and plywood strip on hand. **They total about $50** (plywood was scrap/free)
+
+**Before fabricating the pcb, make sure the traces for the FSR is going to IO4 and not IO38!!!**
 
 | Price  | Part Number            | Type     | LCSC Part   | Owner    | Designators          |   Qty | Manufacturer   |
 |:-------|:-----------------------|:---------|:------------|:---------|:---------------------|------:|:---------------|
