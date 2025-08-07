@@ -52,3 +52,5 @@ I also have the linear softpot potentiometer, force sensitive resistor, and plyw
 | $5.27  | Sales Tax              |          |             |          |                      |       |                |
 | $20.49 | Customs duties & taxes |          |             |          |                      |       |                |
 | $89.56 | **Grand Total**        |          |             |          |                      |       |                |
+
+Actual total would be around ~$150 USD including my own components sourced.
