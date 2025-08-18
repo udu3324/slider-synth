@@ -1,6 +1,6 @@
 # Slider Synth
 
-![alt text](slider_synth_v9.png)
+<img width="1064" height="443" alt="image" src="https://github.com/user-attachments/assets/0e62ada0-3465-4728-84a8-fd31018f2c10" />
 
 A synth that uses a linear touch sensor with a force sensor underneath to create cool sounds. It is inspired by the modulin by wintergatan. Powered by the esp32-s3 and mozzi library.
 
@@ -11,6 +11,8 @@ I built this pcb to make my diy setup more professional. I originally hooked eve
 ## Schematic
 
 ![alt text](image.png)
+
+![alt text](slider_synth_v9.png)
 
 ## Additional Notes
 
